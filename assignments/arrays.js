@@ -143,8 +143,11 @@ let BMWAndAudi = [];
 console.log();
 
 for (let i = 0; i < inventory.length; i++){
-  if (inventory.car_make[i] == "Audi" || inventory.car_make[i] =="BMW"){
-   BMWAndAudi.push(inventory[i]);  
+  if (inventory[i].car_make == "Audi"){
+      BMWAndAudi.push(inventory[i]);
+  }
+   if ( inventory[i].car_make =="BMW"){
+      BMWAndAudi.push(inventory[i]);  
   }
 }; 
 
